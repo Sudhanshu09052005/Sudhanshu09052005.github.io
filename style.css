@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 body {
-  background: #0f172a;
-  color: #e5e7eb;
-  line-height: 1.6;
+  background: #1c1c1c; /* charcoal */
+  color: #eaeaea;
+  line-height: 1.7;
 }
 
 /* Layout */
@@ -20,67 +20,90 @@ body {
 
 /* Header */
 header {
-  padding: 80px 0;
+  padding: 90px 0;
   text-align: center;
 }
 
 header h1 {
   font-size: 3rem;
-  color: #38bdf8;
+  color: #f5f5f4; /* soft white */
+  letter-spacing: 1px;
 }
 
 header p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #cbd5f5;
+  margin-top: 12px;
+  font-size: 1.15rem;
+  color: #b6b6b6;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 11px 22px;
+  background: #d6c9a6; /* warm sand */
+  color: #1c1c1c;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #c8bb95;
+  transform: translateY(-2px);
 }
 
 /* Sections */
 section {
-  margin: 60px 0;
+  margin: 80px 0;
 }
 
 section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  border-left: 5px solid #38bdf8;
-  padding-left: 15px;
+  color: #d6c9a6;
+  letter-spacing: 0.5px;
+}
+
+section p {
+  color: #cfcfcf;
+  max-width: 750px;
 }
 
 /* Cards */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 24px;
+  margin-top: 30px;
 }
 
 .card {
-  background: #020617;
-  padding: 20px;
-  border-radius: 12px;
-  transition: 0.3s;
+  background: #262626;
+  padding: 24px;
+  border-radius: 14px;
+  transition: all 0.35s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(56,189,248,0.3);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.45);
 }
 
 .card h3 {
-  color: #38bdf8;
+  color: #e7e2d4;
   margin-bottom: 10px;
 }
 
 .card p {
-  color: #94a3b8;
+  color: #bdbdbd;
 }
 
-/* Buttons */
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 18px;
-  background: #38bdf8;
-  color: #020617;
-  border-radius: 8px;
-  text-decoration: none;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 35px 0;
+  color: #8f8f8f;
+  font-size: 0.9rem;
+}
