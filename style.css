@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  padding: 80px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #cbd5f5;
+}
+
+/* Sections */
+section {
+  margin: 60px 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 5px solid #38bdf8;
+  padding-left: 15px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(56,189,248,0.3);
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #94a3b8;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 8px;
+  text-decoration: none;
