@@ -1,30 +1,11 @@
-# Sudhanshu Portfolio
+Copy your certificate and profile images into this `images/` folder and name them as follows so the site can load them in Chrome:
 
-Static portfolio site prepared for GitHub Pages with custom domain `sudhanshudwivedi.me`.
+- img.jpeg            (profile image shown in header/card)
+- ce4.jpeg            (certificate 1)
+- ce3.jpeg            (certificate 2)
+- cert3.png           (certificate 3)
+- cer1.jpeg           (certificate 4)
 
-## Publish on GitHub Pages
+If your files have different names, either rename them to the above or update the `src` and `href` values in `index.html` accordingly.
 
-1. Create a GitHub repository for this project.
-2. Push these files to the repository.
-3. In GitHub, go to **Settings** -> **Pages**.
-4. Set the source to your main branch and root folder.
-5. Add the custom domain `sudhanshudwivedi.me`.
-6. Enable **Enforce HTTPS** after DNS is verified.
-
-## DNS setup for `sudhanshudwivedi.me`
-
-If you manage the domain DNS, point it to GitHub Pages using:
-
-- `A` records for `@`:
-  - `185.199.108.153`
-  - `185.199.109.153`
-  - `185.199.110.153`
-  - `185.199.111.153`
-- `CNAME` record for `www` -> `YOUR_GITHUB_USERNAME.github.io`
-
-If you want the apex domain only, keep the `A` records above and still add the custom domain in GitHub Pages.
-
-## Notes
-
-- Keep the `images/` folder committed so profile photos and certificates load correctly.
-- The site is plain HTML/CSS/JS, so no build step is required.
+Opening `index.html` directly in Chrome should now display images when these files are present in this folder. If you plan to host the site, ensure the `images/` folder is deployed with the site.

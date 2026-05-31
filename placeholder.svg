@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" fill="none">
+  <rect width="800" height="1000" rx="28" fill="#0b1622" />
+  <g fill="#0f2a3a" opacity="0.6">
+    <circle cx="200" cy="200" r="140" />
+    <circle cx="640" cy="760" r="180" />
+  </g>
+  <text x="50%" y="50" text-anchor="middle" fill="#cbeeff" font-family="Space Grotesk, Inter, sans-serif" font-weight="700" font-size="28">Sudhanshu Dwivedi</text>
+</svg>
