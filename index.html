@@ -1,69 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sudhanshu Dwivedi | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A futuristic, recruiter-friendly portfolio website template."
+    />
+    <title>Sudhanshu Dwivedi | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
 
-  <header>
-    <div class="container">
-      <h1>Sudhanshu Dwivedi</h1>
-      <p>Computer Engineering | AI & ML Enthusiast</p>
-      <a class="btn" href="#">Download Resume</a>
+    <header class="topbar">
+      <a class="brand" href="#home">
+        <span class="brand-mark">SD</span>
+        <span class="brand-text">
+          <strong>Sudhanshu Dwivedi</strong>
+          <small>Portfolio</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+      </nav>
+
+      <a class="button button-secondary" href="#contact">Contact</a>
+    </header>
+
+    <main id="home" class="shell">
+      <section class="hero panel">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Future-ready portfolio</p>
+          <h1>
+            <span class="hero-line hero-line-muted">Hi, I am</span>
+            <span class="hero-line"><span class="accent">Sudhanshu Dwivedi</span></span>
+            <span class="hero-line">B.Tech CSE (AI & ML)</span>
+            <span class="hero-line hero-line-role">Web Developer</span>
+          </h1>
+          <p class="hero-text">
+            I keep improving my coding skills, look for better ways to learn, and
+            build clean, practical projects with a strong focus on web
+            development, problem solving, and modern technology.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#projects">View Projects</a>
+            <a class="button button-ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="quick-stats">
+            <article>
+              <strong>3+</strong>
+              <span>Featured Projects</span>
+            </article>
+            <article>
+              <strong>5+</strong>
+              <span>Core Skills</span>
+            </article>
+            <article>
+              <strong>2026</strong>
+              <span>Portfolio Ready</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-card">
+            <div class="profile-photo">
+              <img src="images/img.jpeg" alt="Sudhanshu Dwivedi" onerror="this.onerror=null;this.src='images/placeholder.svg'" />
+            </div>
+            <div class="profile-meta">
+              <p class="profile-name">Sudhanshu Dwivedi</p>
+              <p class="profile-role">B.Tech CSE (AI & ML) | 3rd Year | Web Developer</p>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-1">
+            <span class="chip">College</span>
+            <strong>Lokmanya Tilak College of Engineering, Navi Mumbai</strong>
+            <p>B.Tech in Computer Science with specialization in Artificial Intelligence and Machine Learning. 3rd Year.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="about" class="section-grid">
+        <article class="panel card reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Curious, consistent, and always improving my coding skills.</h2>
+          <p>
+            I am Sudhanshu Dwivedi, currently pursuing B.Tech in Computer Science
+            with specialization in Artificial Intelligence and Machine Learning at
+            Lokmanya Tilak College of Engineering, Navi Mumbai. I am in my 3rd
+            year. I enjoy coding, building practical web projects, and learning
+            new technologies that help me grow as a developer. I like working in a
+            clean and organized way, focusing on problem solving, logical thinking,
+            and continuous improvement. Along with academics, I keep exploring
+            better ways to strengthen my technical skills and make my projects
+            more useful, creative, and user-friendly. Outside coding, I enjoy
+            sports, especially cricket, and I also love visiting mountain places
+            for travel and refreshment.
+          </p>
+        </article>
+
+      </section>
+
+      <section id="skills" class="panel section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Skills</p>
+            <h2>Tools and technologies I work with</h2>
+          </div>
+          <div class="skill-meta">
+            <div class="skill-legend" aria-label="Skill color legend">
+              <span class="skill-legend-item skill-legend-green">Green - Intermediate</span>
+              <span class="skill-legend-item skill-legend-yellow">Yellow - Basic</span>
+              <span class="skill-legend-item skill-legend-blue">Blue - Expert</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chips">
+          <span class="chip-blue">C</span>
+          <span class="chip-green">C++</span>
+          <span class="chip-green">Python</span>
+          <span class="chip-green">HTML</span>
+          <span class="chip-green">CSS</span>
+          <span class="chip-green">JavaScript</span>
+          <span class="chip-green">Web Development</span>
+          <span class="chip-green">SQL</span>
+          <span class="chip-yellow">Large Language Models</span>
+          <span class="chip-yellow">DevOps</span>
+        </div>
+      </section>
+
+      <section id="projects" class="panel section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work that shows real thinking</h2>
+          </div>
+          
+        </div>
+
+        <div class="projects">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-index">01</span>
+              <span class="project-tag">AI + Finance</span>
+            </div>
+            <h3>Smart Expenses Tracker</h3>
+            <p>
+              A student-focused expense tracker that helps manage daily spending,
+              budget planning, and quick money insights. It also includes an AI
+              chatbot for guidance and support.
+            </p>
+            <ul>
+              <li>Built for students</li>
+              <li>Budget and expense tracking</li>
+              <li>AI chatbot help</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-index">02</span>
+              <span class="project-tag">Cyber Security</span>
+            </div>
+            <h3>Open Source Investigation Tool</h3>
+            <p>
+              An open-source investigation tool for cyber security and ethical
+              hacking that shows publicly available information and helps
+              identify whether a source looks trusted or suspicious.
+            </p>
+            <ul>
+              <li>Public information analysis</li>
+              <li>Security-focused research</li>
+              <li>Trust and fraud signal checks</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-index">03</span>
+              <span class="project-tag">Web Development</span>
+            </div>
+            <h3>Orbiqueevents.in + Preshore.in</h3>
+            <p>
+              Web development projects focused on modern UI/UX, easy
+              understanding, smooth operating theme, and practical layouts.
+              Orbiqueevents.in is an event planner website, while Preshore.in is
+              a retail-style website inspired by premium product branding.
+            </p>
+            <ul>
+              <li>Best UI/UX presentation</li>
+              <li>Easy to understand and operate</li>
+              <li>Event planner and retail theme</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="panel section contact reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Reach out on WhatsApp, email, LinkedIn, or GitHub with one tap.</h2>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-item contact-gmail" href="mailto:sudhanshu96533@gmail.com">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 3.25V17h16V8.25l-7.2 5.04a1.2 1.2 0 0 1-1.4 0L4 8.25zm15.2-1.25H4.8L12 12.8l7.2-5.8z"/></svg>
+            </span>
+            <span class="contact-copy">
+              <span>Gmail</span>
+              <strong>sudhanshu96533@gmail.com</strong>
+            </span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-item contact-linkedin" href="https://www.linkedin.com/in/sudhanshu-dwivedi-277497328?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false"><path d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88zM5.1 8.2h3.68V21H5.1V8.2zM11.1 8.2h3.53v1.74h.05c.49-.92 1.69-1.89 3.48-1.89 3.72 0 4.4 2.45 4.4 5.63V21h-3.68v-5.12c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21H11.1V8.2z"/></svg>
+            </span>
+            <span class="contact-copy">
+              <span>LinkedIn</span>
+              <strong>Open Profile</strong>
+            </span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-item contact-github" href="https://github.com/Sudhanshu09052005" target="_blank" rel="noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false"><path d="M12 2.2a9.8 9.8 0 0 0-3.1 19.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-5.1 0-1.1.4-2 1-2.8-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.8 1 1.7 1 2.8 0 4-2.4 4.8-4.6 5.1.4.3.8.9.8 1.8v2.6c0 .3.2.6.8.5A9.8 9.8 0 0 0 12 2.2z"/></svg>
+            </span>
+            <span class="contact-copy">
+              <span>GitHub</span>
+              <strong>Open Profile</strong>
+            </span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-item contact-whatsapp" href="https://wa.me/918299077858" target="_blank" rel="noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false"><path d="M12 2a9.96 9.96 0 0 0-8.5 15.1L2 22l5.1-1.4A9.95 9.95 0 1 0 12 2zm0 18.1a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.1 8.1 0 1 1 12 20.1zm4.7-5.7c-.2-.1-1.4-.7-1.6-.8-.2-.1-.3-.1-.5.1-.1.2-.6.8-.7.9-.1.1-.2.1-.4 0-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.5-1.2-.7-1.6-.2-.4-.4-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.8 2.4.9 2.6.1.2 1.8 2.8 4.4 3.8.6.2 1 .4 1.3.5.6.2 1.2.2 1.6.1.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.1-.4-.2z"/></svg>
+            </span>
+            <span class="contact-copy">
+              <span>WhatsApp</span>
+              <strong>Open WhatsApp</strong>
+            </span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="certificates" class="panel section certificates reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Certificates</p>
+            <h2>Certificates</h2>
+          </div>
+        </div>
+
+        <div class="certificate-grid">
+          <a class="certificate-slot" href="images/certificate 2.jpeg" data-cert-type="image" data-cert-src="images/certificate 2.jpeg" data-cert-title="Certificate 1" aria-label="Open certificate 1">
+            <img class="certificate-media" src="images/certificate 2.jpeg" alt="Certificate 1" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'" />
+          </a>
+          <a class="certificate-slot" href="images/Certificate 3.jpeg" data-cert-type="image" data-cert-src="images/Certificate 3.jpeg" data-cert-title="Certificate 2" aria-label="Open certificate 2">
+            <img class="certificate-media" src="images/Certificate 3.jpeg" alt="Certificate 2" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'" />
+          </a>
+          <a class="certificate-slot" href="images/certificate 1.jpeg" data-cert-type="image" data-cert-src="images/certificate 1.jpeg" data-cert-title="Certificate 3" aria-label="Open certificate 3">
+            <img class="certificate-media" src="images/certificate 1.jpeg" alt="Certificate 3" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'" />
+          </a>
+          <a class="certificate-slot" href="images/Screenshot 2026-05-31 132909.png" data-cert-type="image" data-cert-src="images/Screenshot 2026-05-31 132909.png" data-cert-title="Certificate 4" aria-label="Open certificate 4">
+            <img class="certificate-media" src="images/Screenshot 2026-05-31 132909.png" alt="Certificate 4" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'" />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div class="certificate-lightbox" id="certificateLightbox" aria-hidden="true">
+      <div class="certificate-lightbox-backdrop" data-close-certificate></div>
+      <div class="certificate-lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="certificateLightboxTitle">
+        <div class="certificate-lightbox-top">
+          <strong id="certificateLightboxTitle">Certificate</strong>
+          <div class="certificate-lightbox-actions">
+            <button type="button" class="certificate-nav-btn" data-prev-certificate aria-label="Previous certificate">‹</button>
+            <button type="button" class="certificate-nav-btn" data-next-certificate aria-label="Next certificate">›</button>
+            <button type="button" class="certificate-nav-btn certificate-close-btn" data-close-certificate aria-label="Close certificate viewer">×</button>
+          </div>
+        </div>
+        <div class="certificate-lightbox-body" id="certificateLightboxBody"></div>
+      </div>
     </div>
-  </header>
 
-  <main class="container">
-
-    <section>
-      <h2>About Me</h2>
+    <section class="panel declaration reveal" aria-label="Declaration">
+      <p class="eyebrow">Declaration</p>
       <p>
-        I am a Computer Engineering student focused on Artificial Intelligence,
-        Machine Learning, and Web Development. I love building real-world
-        projects and learning new technologies.
+        I hereby declare that the information presented in this portfolio is true and correct to the best of my knowledge and belief.
       </p>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="cards">
+    <footer class="footer">
+      <span id="year"></span>
+    </footer>
 
-        <div class="card">
-          <h3>Portfolio Website</h3>
-          <p>Personal portfolio using HTML, CSS & GitHub Pages.</p>
-          <a class="btn" href="#">View</a>
-        </div>
-
-        <div class="card">
-          <h3>AI Mini Project</h3>
-          <p>Machine learning based project with Python.</p>
-          <a class="btn" href="#">View</a>
-        </div>
-
-        <div class="card">
-          <h3>Web Development Project</h3>
-          <p>Responsive website with modern UI.</p>
-          <a class="btn" href="#">View</a>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <b>sudhanshu3837@email.com</b></p>
-      <p>GitHub: github.com/Sudhanshu09052005</p>
-      <p>Linkedin: https://www.linkedin.com/in/sudhanshu-dwivedi-277497328</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© 2025 Sudhanshu Dwivedi</p>
-  </footer>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
